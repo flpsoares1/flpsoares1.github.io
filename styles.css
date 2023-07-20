@@ -38,7 +38,6 @@ section {
     padding: 40px;
 }
 
-/* Estilos para a seção "Sobre" */
 .profile-picture {
     max-width: 200px;
     border-radius: 50%;
@@ -75,7 +74,6 @@ h1 {
     background-color: #25D366;
 }
 
-/* Estilos para o rodapé */
 footer {
     background-color: #f4f4f4;
     padding: 20px;
