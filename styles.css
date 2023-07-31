@@ -87,13 +87,8 @@ footer {
 }
 
 .social-media img {
-    width: 30px;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    width: 20px; 
+    height: 20px;
 }
 
 .container {
