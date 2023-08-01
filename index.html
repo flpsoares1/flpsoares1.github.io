@@ -43,7 +43,12 @@
         <div class="right-half">
             <div class="text-box">
                 <h1 data-aos="fade-left">Como posso ajudá-lo</h1>
-                <p data-aos="fade-left">Smaller text goes here</p>
+                <p data-aos="fade-left">Com pesquisa de mercado, te ajudo a
+                    anunciar para o público ideal, abaixar o custo
+                    por clique e vender mais. Alguns de meus
+                    serviços incluem redação de anúncios para
+                    Facebook, Instagram, E-mail Marketing e
+                    Google Ads.</p>
             </div>
         </div>
     </section>
@@ -82,37 +87,25 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // JavaScript code for handling header visibility
-        let lastScrollTop = 0;
-        const header = document.querySelector('header');
+        /* JavaScript */
+        document.addEventListener("DOMContentLoaded", function () {
+        var lastScrollTop = 0;
+        var header = document.querySelector("header");
 
-        function onScroll() {
-            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScrollTop > lastScrollTop) {
-                // Scrolling down, hide the header
-                header.classList.add('hide-header');
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+            header.classList.add("hide-header");
             } else {
-                // Scrolling up, show the header
-                header.classList.remove('hide-header');
+            header.classList.remove("hide-header");
             }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+        });
 
-            lastScrollTop = currentScrollTop;
-        }
-
-        // Attach the scroll event listener
-        window.addEventListener('scroll', onScroll);
-
-        // Initialize AOS library
         AOS.init();
 
-        // Trigger fade-in animation when the page loads
-        window.addEventListener('load', function() {
-            var firstPage = document.getElementById('first-page');
-            firstPage.classList.add('fade-in-animation');
-
-            // Show the header initially
-            header.classList.remove('hide-header');
+        var firstPage = document.getElementById("first-page");
+        firstPage.classList.add("fade-in-animation");
         });
     </script>
 </body>
