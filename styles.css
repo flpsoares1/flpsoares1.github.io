@@ -1,16 +1,13 @@
 /* styles.css */
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #080E26;
-    color: #fff;
 }
 
-/* Header */
 header {
     display: flex;
     align-items: center;
@@ -22,7 +19,11 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999; /* Add a higher z-index to keep the header on top */
+    transition: background 0.3s ease-in-out;
+}
+
+header.hide-header {
+    background: transparent;
 }
 
 header img {
@@ -30,7 +31,6 @@ header img {
     margin-right: 20px;
 }
 
-/* First Page */
 #first-page {
     display: flex;
     height: 100vh;
@@ -40,7 +40,6 @@ header img {
     opacity: 0;
 }
 
-/* Add the fade-in animation */
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -66,9 +65,6 @@ header img {
 
 .text-box {
     text-align: center;
-    word-wrap: break-word; /* Allow text to break into multiple lines */
-    width: 300px; /* Set a fixed width for the text box */
-    height: 300px; /* Set a fixed height for the text box */
 }
 
 .text-box h1 {
@@ -92,7 +88,6 @@ header img {
     height: auto;
 }
 
-/* Second Page */
 #second-page {
     height: 100vh;
     background-color: #080E26;
@@ -103,53 +98,32 @@ header img {
     font-size: 30px;
 }
 
-.left-half, .right-half {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #080E26;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
     color: #fff;
+    text-decoration: none;
 }
 
-.left-half .text-box, .right-half .text-box {
-    text-align: center;
-    word-wrap: break-word; /* Allow text to break into multiple lines */
-    width: 200px; /* Set a fixed width for the text box */
-    height: 200px; /* Set a fixed height for the text box */
-    opacity: 0; /* Initially set to fully transparent */
-}
-
-/* Add the fade-in animation for text boxes in the second page */
-@keyframes fade-in-box {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.fade-in-animation .left-half .text-box, .fade-in-animation .right-half .text-box {
-    animation: fade-in-box 1s ease-in-out forwards;
-}
-
-/* Profile Picture, Embedded Video, and Description */
-.profile-and-video {
-    display: flex;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+section {
+    padding: 40px;
 }
 
 .profile-picture {
-    margin-right: 20px;
-    width: 200px; /* Set a fixed width for the profile picture */
-    height: 200px; /* Set a fixed height for the profile picture */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .profile-picture img {
@@ -158,13 +132,76 @@ header img {
     height: 100%;
 }
 
+.description {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.instagram-button {
+    background-color: #E1306C;
+}
+
+.pdf-button {
+    background-color: #2196F3;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+footer {
+    display: none;
+    background-color: #080E26;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.show-footer {
+    display: block;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+
+.centered-section {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-and-video {
+    display: flex;
+    align-items: stretch;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .embedded-video {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 560px; /* Set a fixed width for the embedded video */
-    height: 315px; /* Set a fixed height for the embedded video */
 }
 
 .embedded-video iframe {
@@ -172,71 +209,52 @@ header img {
     max-height: 100%;
 }
 
-.description {
-    flex: 1;
-}
+/* Media Queries */
 
-/* Footer */
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    display: none; /* Hide the footer by default */
-}
-
-.social-media img {
-    width: 20px;
-    height: 20px;
-    margin: 5px; /* Add some spacing between the icons */
-}
-
-/* Show the footer only on the last page */
-footer.show-footer {
-    display: block;
-}
-
-/* Media Query for Responsive Design */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens here */
+/* For screens with a maximum width of 767px */
+@media screen and (max-width: 767px) {
     header img {
-        max-width: 80px; /* Reduce the logo size for smaller screens */
+        max-width: 80px;
+        margin-right: 10px;
     }
-    .text-box {
-        width: 80%; /* Make the text box wider for smaller screens */
-        height: auto; /* Allow the text box height to adjust */
+
+    .text-box h1 {
+        font-size: 26px;
     }
-    .left-half .text-box, .right-half .text-box {
-        width: 80%; /* Make the text box wider for smaller screens */
-        height: auto; /* Allow the text box height to adjust */
-    }
-    .profile-picture, .embedded-video {
-        width: 100%; /* Make the profile picture and embedded video full width on smaller screens */
-    }
-    .profile-picture img {
-        height: auto; /* Allow the profile picture height to adjust */
+
+    .text-box p {
+        font-size: 16px;
     }
 }
 
-/* Reset default margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* For screens with a minimum width of 768px and a maximum width of 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    header img {
+        max-width: 100px;
+        margin-right: 15px;
+    }
+
+    .text-box h1 {
+        font-size: 32px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
 }
 
-/* Set a universal font size and line height */
-html {
-    font-size: 16px;
-    line-height: 1.5;
-}
+/* For screens with a minimum width of 1200px */
+@media screen and (min-width: 1200px) {
+    header img {
+        max-width: 100px;
+        margin-right: 20px;
+    }
 
-.show-header {
-    opacity: 1;
-    pointer-events: auto;
-}
+    .text-box h1 {
+        font-size: 36px;
+    }
 
-/* Hide the header when scrolled down */
-.hide-header {
-    opacity: 0;
-    pointer-events: none;
+    .text-box p {
+        font-size: 18px;
+    }
 }
