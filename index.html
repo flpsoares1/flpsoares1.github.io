@@ -13,6 +13,42 @@
     <header>
         <img src="images/logo.jpg" alt="Logotipo">
     </header>
+
+    <!-- First Page -->
+    <section id="first-page">
+        <div class="first-half">
+            <div class="text-box">
+                <h1>Copywriting para aumentar a conversão de seu curso online.</h1>
+                <p>Quer vender mais e diminuir seus custos de seus anuncios, mas não sabe como? Eu te ajudo!</p>
+            </div>
+        </div>
+        <div class="second-half">
+            <img src="images/primeira_pagina.png" alt="Image">
+        </div>
+    </section>
+
+    <!-- Second Page -->
+    <section id="second-page" class="fade-in">
+        <div class="left-half">
+            <div class="text-box">
+                <h1 data-aos="fade-right">Quem sou eu</h1>
+                <p data-aos="fade-right">Um copywriter iniciante, já introduzido no
+                    mercado de opções; fã do espírito
+                    empreendedor. Adoro histórias de
+                    superação e uso de redação publicitária
+                    para ajudar empreendedores a formar suas
+                    histórias.</p>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="text-box">
+                <h1 data-aos="fade-left">Como posso ajudá-lo</h1>
+                <p data-aos="fade-left">Smaller text goes here</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page -->
     <section id="sobre">
         <div class="profile-and-video" data-aos="fade-up">
             <div class="profile-picture">
@@ -34,11 +70,6 @@
         </div>
     </section>
 
-    <!-- Page 2 -->
-    <section id="second-page">
-        <!-- Content for the second page goes here -->
-    </section>
-
     <footer>
         <div class="contact-info">
             <p><a href="mailto:felipe@easycopies.com.br" data-aos="fade-up">Email</a></p>
@@ -52,6 +83,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        // Trigger fade-in animation when the page loads
+        window.addEventListener('load', function() {
+            var firstPage = document.getElementById('first-page');
+            firstPage.classList.add('fade-in-animation');
+        });
     </script>
 </body>
 
