@@ -229,3 +229,14 @@ html {
     font-size: 16px;
     line-height: 1.5;
 }
+
+.show-header {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hide the header when scrolled down */
+.hide-header {
+    opacity: 0;
+    pointer-events: none;
+}
