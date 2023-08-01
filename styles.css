@@ -1,7 +1,5 @@
 /* styles.css */
 
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -22,11 +20,13 @@ header {
     padding: 20px;
     color: #fff;
     background: linear-gradient(180deg, transparent 0%, #080E26 100%);
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add opacity transition */
 }
 
 header.hide-header {
     background: transparent;
+    opacity: 0; /* Set the opacity to 0 when hidden */
+    pointer-events: none; /* Disable pointer events when hidden */
 }
 
 header img {
@@ -99,6 +99,10 @@ header img {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+}
+
+#second-page .text-box {
+    word-break: break-word;
 }
 
 nav ul {
