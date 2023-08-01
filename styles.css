@@ -21,6 +21,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999; /* Add a higher z-index to keep the header on top */
 }
 
 header img {
@@ -132,4 +133,44 @@ header img {
 
 .fade-in-animation .left-half .text-box, .fade-in-animation .right-half .text-box {
     animation: fade-in-box 1s ease-in-out forwards;
+}
+
+/* Profile Picture, Embedded Video, and Description */
+.profile-and-video {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-picture {
+    margin-right: 20px;
+    width: 200px; /* Set a fixed width for the profile picture */
+    height: 200px; /* Set a fixed height for the profile picture */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.embedded-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px; /* Set a fixed width for the embedded video */
+    height: 315px; /* Set a fixed height for the embedded video */
+}
+
+.embedded-video iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    flex: 1;
 }
