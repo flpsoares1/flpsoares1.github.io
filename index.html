@@ -89,23 +89,23 @@
     <script>
         /* JavaScript */
         document.addEventListener("DOMContentLoaded", function () {
-        var lastScrollTop = 0;
-        var header = document.querySelector("header");
+            var lastScrollTop = 0;
+            var header = document.querySelector("header");
 
-        window.addEventListener("scroll", function () {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-            header.classList.add("hide-header");
-            } else {
-            header.classList.remove("hide-header");
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
-        });
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add("hide-header");
+                } else {
+                    header.classList.remove("hide-header");
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+            });
 
-        AOS.init();
+            AOS.init();
 
-        var firstPage = document.getElementById("first-page");
-        firstPage.classList.add("fade-in-animation");
+            var firstPage = document.getElementById("first-page");
+            firstPage.classList.add("fade-in-animation");
         });
     </script>
 </body>
