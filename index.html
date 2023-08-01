@@ -89,6 +89,45 @@
             var firstPage = document.getElementById('first-page');
             firstPage.classList.add('fade-in-animation');
         });
+
+        // Handle header fade on scroll
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            var firstPage = document.getElementById('first-page');
+
+            var headerHeight = header.offsetHeight;
+            var scrollTop = window.scrollY;
+
+            // Calculate the opacity based on scroll position
+            var opacity = 1 - (scrollTop / headerHeight);
+
+            // Apply the opacity to the header
+            header.style.opacity = opacity;
+
+            // Hide the header when scrolling down on the first page
+            if (scrollTop < headerHeight) {
+                header.style.display = 'flex';
+            } else {
+                header.style.display = 'none';
+            }
+        });
+
+        // Show the footer only on the last page
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            var secondPage = document.getElementById('second-page');
+
+            var scrollHeight = document.documentElement.scrollHeight;
+            var scrollTop = window.scrollY;
+            var windowHeight = window.innerHeight;
+
+            // Show the footer when on the last page
+            if (scrollHeight - scrollTop === windowHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
     </script>
 </body>
 
