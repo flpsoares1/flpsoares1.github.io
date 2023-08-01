@@ -11,8 +11,8 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #333;
     color: #fff;
+    background-color: #0D414F;
 }
 
 header img {
@@ -41,8 +41,16 @@ section {
 }
 
 .profile-picture {
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .description {
@@ -87,27 +95,8 @@ footer {
 }
 
 .social-media img {
-    width: 20px; 
+    width: 20px;
     height: 20px;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    max-width: 600px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.photo {
-    flex: 1;
-}
-
-.photo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 .centered-section {
@@ -117,34 +106,21 @@ footer {
 
 .profile-and-video {
     display: flex;
-    align-items: stretch; 
+    align-items: stretch;
     max-width: 800px;
     margin: 0 auto;
-}
-
-.profile-picture {
-    margin-right: 20px;
-    max-height: 200px; 
 }
 
 .embedded-video {
     flex: 1;
     display: flex;
-    justify-content: center; /
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .embedded-video iframe {
     max-width: 100%;
-    max-height: 100%; 
-}
-
-.description {
-    flex: 1;
-}
-
-header {
-    background-color: #0D414F;
+    max-height: 100%;
 }
 
 #sobre {
