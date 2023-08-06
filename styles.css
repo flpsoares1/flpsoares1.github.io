@@ -109,12 +109,12 @@ header img {
 }
 
 #second-page .text-box h1 {
-    font-size: 24px; /* Adjust the font size for the heading */
+    font-size: 48px; /* Adjust the font size for the heading */
     margin-bottom: 10px;
 }
 
 #second-page .text-box p {
-    font-size: 14px; /* Adjust the font size for the paragraph */
+    font-size: 24px; /* Adjust the font size for the paragraph */
 }
 
 nav ul {
