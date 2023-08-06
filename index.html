@@ -93,6 +93,37 @@
     </div>
 </section>
 
+<!-- Fourth Page -->
+<section id="fourth-page">
+    <div class="ruler-image">
+        <img src="images/ruler.png" alt="Ruler">
+    </div>
+    <div class="text-boxes">
+        <div class="text-box" style="top: 20%; left: 15%;">
+            <h2>Pesquisa</h2>
+            <p>O primeiro passo é conhecer seu
+                negócio e identificar seu público
+                ideal.</p>
+        </div>
+        <div class="text-box" style="top: 20%; left: 50%;">
+            <h2>Copywriting</h2>
+            <p>Baseado na pesquisa, eu vou
+                desenvolver o processo de vendas
+                com mais chances de sucesso.</p>
+        </div>
+        <div class="text-box" style="top: 50%; left: 15%;">
+            <h2>Revisão</h2>
+            <p>Eu vou enviar para você os anúncios
+                e calendário editorial para revisão e aprovação.</p>
+        </div>
+        <div class="text-box" style="top: 50%; left: 50%;">
+            <h2>Pronto para ser publicado</h2>
+            <p>Com tudo aprovado, envio os
+                anúncios para você publicar.</p>
+        </div>
+    </div>
+</section>
+
     <footer>
         <div class="contact-info">
             <p><a href="mailto:felipe@easycopies.com.br" data-aos="fade-up">Email</a></p>
@@ -107,24 +138,35 @@
     <script>
         /* JavaScript */
         document.addEventListener("DOMContentLoaded", function () {
-            var lastScrollTop = 0;
-            var header = document.querySelector("header");
+    var lastScrollTop = 0;
+    var header = document.querySelector("header");
 
-            window.addEventListener("scroll", function () {
-                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop) {
-                    header.classList.add("hide-header");
-                } else {
-                    header.classList.remove("hide-header");
-                }
-                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
-            });
+    window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            AOS.init();
+        // Only show the header when at the top of the website
+        if (scrollTop <= 0) {
+            header.classList.remove("hide-header");
+        } else if (scrollTop > lastScrollTop) {
+            header.classList.add("hide-header");
+        } else {
+            header.classList.remove("hide-header");
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+    });
 
-            var firstPage = document.getElementById("first-page");
-            firstPage.classList.add("fade-in-animation");
-        });
+    AOS.init();
+
+    var firstPage = document.getElementById("first-page");
+    firstPage.classList.add("fade-in-animation");
+    const fourthPageSection = document.getElementById("fourth-page");
+    fourthPageSection.addEventListener("mouseenter", function () {
+        document.body.classList.add("transitioning");
+    });
+    fourthPageSection.addEventListener("mouseleave", function () {
+        document.body.classList.remove("transitioning");
+    });
+});
     </script>
 </body>
 
