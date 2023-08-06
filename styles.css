@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,57 +11,25 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999; /* Ensure the header is above other elements */
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     color: #fff;
     background: linear-gradient(180deg, transparent 0%, #080E26 100%);
-    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add opacity transition */
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 header.hide-header {
     background: transparent;
-    opacity: 0; /* Set the opacity to 0 when hidden */
-    pointer-events: none; /* Disable pointer events when hidden */
+    opacity: 0;
+    pointer-events: none;
 }
 
 header img {
     max-width: 100px;
     margin-right: 20px;
-}
-
-#first-page {
-    display: flex;
-    height: 100vh;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in-animation {
-    animation: fade-in 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.first-half {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #080E26;
 }
 
 .text-box {
@@ -78,43 +44,13 @@ header img {
     font-size: 18px;
 }
 
-.second-half {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.second-half img {
-    max-width: 100%;
-    height: auto;
-}
-
-#second-page {
-    height: 100vh;
-    background-color: #080E26;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-}
-
-#second-page .text-box {
-    word-break: break-word;
-    text-align: center;
-    max-width: 70%; /* Adjust the max-width to control the width of the text box */
-    margin: 0 auto; /* Center the text box horizontally */
-}
-
 #second-page .text-box h1 {
-    font-size: 48px; /* Adjust the font size for the heading */
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 #second-page .text-box p {
-    font-size: 24px; /* Adjust the font size for the paragraph */
+    font-size: 24px;
 }
 
 nav ul {
@@ -228,9 +164,6 @@ footer.show-footer {
     max-height: 100%;
 }
 
-/* Media Queries */
-
-/* For screens with a maximum width of 767px */
 @media screen and (max-width: 767px) {
     header img {
         max-width: 80px;
@@ -246,7 +179,6 @@ footer.show-footer {
     }
 }
 
-/* For screens with a minimum width of 768px and a maximum width of 1199px */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     header img {
         max-width: 100px;
@@ -262,7 +194,6 @@ footer.show-footer {
     }
 }
 
-/* For screens with a minimum width of 1200px */
 @media screen and (min-width: 1200px) {
     header img {
         max-width: 100px;
@@ -329,19 +260,8 @@ footer.show-footer {
     font-size: 24px;
 }
 
-.price {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #fff;
-}
-
-body.transitioning #third-page {
-    background-color: #252833; /* New background color during transition */
-    transition: background-color 1s ease-in-out;
-}
-
 #fourth-page {
-    background-color: #252833; /* New background color */
+    background-color: #252833;
     color: #fff;
     padding: 40px;
 }
@@ -380,7 +300,6 @@ body.transitioning #third-page {
     font-size: 16px;
 }
 
-/* Adjust the positioning of the text boxes */
 .text-box:nth-child(1) {
     top: 20%;
     left: 15%;
