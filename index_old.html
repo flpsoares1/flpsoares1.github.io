@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyCopies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -13,35 +14,100 @@
         <img src="images/logo.jpg" alt="Logotipo">
     </header>
 
-    <section id="sobre" class="centered-section">
-        <div class="profile-and-video">
+    <!-- First Page -->
+    <section id="first-page">
+        <div class="first-half">
+            <div class="text-box">
+                <h1>Copywriting para aumentar a conversão de seu curso online.</h1>
+                <p>Quer vender mais e diminuir seus custos de seus anuncios, mas não sabe como? Eu te ajudo!</p>
+            </div>
+        </div>
+        <div class="second-half">
+            <img src="images/primeira_pagina.png" alt="Image">
+        </div>
+    </section>
+
+    <!-- Second Page -->
+    <section id="second-page" class="fade-in">
+        <div class="left-half">
+            <div class="text-box">
+                <h1 data-aos="fade-right">Quem sou eu</h1>
+                <p data-aos="fade-right">Um copywriter iniciante, já introduzido no
+                    mercado de opções; fã do espírito
+                    empreendedor. Adoro histórias de
+                    superação e uso de redação publicitária
+                    para ajudar empreendedores a formar suas
+                    histórias.</p>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="text-box">
+                <h1 data-aos="fade-left">Como posso ajudá-lo</h1>
+                <p data-aos="fade-left">Com pesquisa de mercado, te ajudo a
+                    anunciar para o público ideal, abaixar o custo
+                    por clique e vender mais. Alguns de meus
+                    serviços incluem redação de anúncios para
+                    Facebook, Instagram, E-mail Marketing e
+                    Google Ads.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page -->
+    <section id="sobre">
+        <div class="profile-and-video" data-aos="fade-up">
             <div class="profile-picture">
                 <img src="images/foto.png" alt="Foto">
             </div>
             <div class="description">
-                <h1>Felipe Soares</h1>
-                <p>
+                <h1 data-aos="fade-left">Felipe Soares</h1>
+                <p data-aos="fade-right">
                     Descrição
                 </p>
-                <div class="contact-buttons">
+                <div class="contact-buttons" data-aos="fade-up">
                     <a href="https://www.instagram.com/easycopies/" target="_blank" class="instagram-button">Instagram</a>
                     <a href="https://wa.me/5571988335537" target="_blank" class="whatsapp-button">WhatsApp</a>
                 </div>
             </div>
-            <div class="embedded-video">
+            <div class="embedded-video" data-aos="fade-up">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="contact-info">
-            <p><a href="mailto:felipe@easycopies.com.br">Email</a></p>
+            <p><a href="mailto:felipe@easycopies.com.br" data-aos="fade-up">Email</a></p>
         </div>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/seu_perfil" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/easycopies/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/seu_perfil" target="_blank" data-aos="fade-up"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/easycopies/" target="_blank" data-aos="fade-up"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        /* JavaScript */
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastScrollTop = 0;
+            var header = document.querySelector("header");
+
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add("hide-header");
+                } else {
+                    header.classList.remove("hide-header");
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+            });
+
+            AOS.init();
+
+            var firstPage = document.getElementById("first-page");
+            firstPage.classList.add("fade-in-animation");
+        });
+    </script>
 </body>
 
 </html>
