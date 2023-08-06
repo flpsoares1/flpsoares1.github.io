@@ -304,6 +304,7 @@ footer.show-footer {
 }
 
 .info-box {
+    background-color: #252833;
     padding: 20px;
     border-radius: 5px;
     flex: 1;
@@ -341,13 +342,34 @@ footer.show-footer {
     color: #fff;
 }
 
+.numbered-box .number {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
 .numbered-box {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #252833; /* Set the background color */
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    margin: 10px;
-    width: calc(25% - 20px); /* Distribute boxes evenly */
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbered-box span.number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .numbered-box h3 {
@@ -357,12 +379,5 @@ footer.show-footer {
 
 .numbered-box p {
     font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.numbered-box .number {
-    font-size: 36px;
-    font-weight: bold;
-    display: block;
     margin-bottom: 10px;
 }
