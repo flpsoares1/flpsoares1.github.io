@@ -103,6 +103,18 @@ header img {
 
 #second-page .text-box {
     word-break: break-word;
+    text-align: center;
+    max-width: 70%; /* Adjust the max-width to control the width of the text box */
+    margin: 0 auto; /* Center the text box horizontally */
+}
+
+#second-page .text-box h1 {
+    font-size: 24px; /* Adjust the font size for the heading */
+    margin-bottom: 10px;
+}
+
+#second-page .text-box p {
+    font-size: 14px; /* Adjust the font size for the paragraph */
 }
 
 nav ul {
@@ -264,4 +276,61 @@ footer.show-footer {
     .text-box p {
         font-size: 18px;
     }
+}
+
+#third-page {
+    background-color: #080E26;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-box h1 {
+    font-size: 30px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+.title-box-between {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.title-box-between h2 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
 }
