@@ -304,12 +304,12 @@ footer.show-footer {
 }
 
 .info-box {
+    background-color: #333;
     padding: 20px;
     border-radius: 5px;
     flex: 1;
     margin: 0 10px;
 }
-
 
 .info-box h2 {
     font-size: 24px;
@@ -333,36 +333,4 @@ footer.show-footer {
     font-size: 14px;
     margin-top: 10px;
     color: #fff;
-}
-
-#fourth-page {
-    background-color: #080E26;
-    padding: 40px;
-    color: #fff;
-}
-
-.numbered-box {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    width: calc(25% - 20px); /* Distribute boxes evenly */
-}
-
-.numbered-box h3 {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-.numbered-box p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.numbered-box .number {
-    font-size: 36px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
 }
