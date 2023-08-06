@@ -382,3 +382,10 @@ footer.show-footer {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
