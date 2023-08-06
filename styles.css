@@ -334,3 +334,69 @@ footer.show-footer {
     margin-top: 10px;
     color: #fff;
 }
+
+body.transitioning #third-page {
+    background-color: #252833; /* New background color during transition */
+    transition: background-color 1s ease-in-out;
+}
+
+#fourth-page {
+    background-color: #252833; /* New background color */
+    color: #fff;
+    padding: 40px;
+}
+
+.ruler-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.ruler-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-boxes {
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.text-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 16px;
+}
+
+/* Adjust the positioning of the text boxes */
+.text-box:nth-child(1) {
+    top: 20%;
+    left: 15%;
+}
+
+.text-box:nth-child(2) {
+    top: 20%;
+    left: 50%;
+}
+
+.text-box:nth-child(3) {
+    top: 50%;
+    left: 15%;
+}
+
+.text-box:nth-child(4) {
+    top: 50%;
+    left: 50%;
+}
