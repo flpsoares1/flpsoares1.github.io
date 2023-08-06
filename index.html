@@ -136,37 +136,25 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        /* JavaScript */
-        document.addEventListener("DOMContentLoaded", function () {
-    var lastScrollTop = 0;
-    var header = document.querySelector("header");
+            document.addEventListener("DOMContentLoaded", function () {
+            var lastScrollTop = 0;
+            var header = document.querySelector("header");
 
-    window.addEventListener("scroll", function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add("hide-header");
+                } else {
+                    header.classList.remove("hide-header");
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+            });
 
-        // Only show the header when at the top of the website
-        if (scrollTop <= 0) {
-            header.classList.remove("hide-header");
-        } else if (scrollTop > lastScrollTop) {
-            header.classList.add("hide-header");
-        } else {
-            header.classList.remove("hide-header");
-        }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
-    });
+            AOS.init();
 
-    AOS.init();
-
-    var firstPage = document.getElementById("first-page");
-    firstPage.classList.add("fade-in-animation");
-    const fourthPageSection = document.getElementById("fourth-page");
-    fourthPageSection.addEventListener("mouseenter", function () {
-        document.body.classList.add("transitioning");
-    });
-    fourthPageSection.addEventListener("mouseleave", function () {
-        document.body.classList.remove("transitioning");
-    });
-});
+            var firstPage = document.getElementById("first-page");
+            firstPage.classList.add("fade-in-animation");
+        });
     </script>
 </body>
 
