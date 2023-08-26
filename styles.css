@@ -271,6 +271,31 @@ footer.show-footer {
     #second-page .text-box p {
         font-size: 14px;
     }
+
+    #sixth-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .contact-buttons a {
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
 
 /* For screens with a minimum width of 768px and a maximum width of 991px (tablets) */
@@ -312,6 +337,31 @@ footer.show-footer {
 
     #second-page .text-box p {
         font-size: 18px;
+    }
+
+    #sixth-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .contact-buttons a {
+        margin: 15px 0;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 15px 0;
+        padding: 15px 30px;
+        font-size: 16px;
     }
 }
 
@@ -356,6 +406,26 @@ footer.show-footer {
         font-size: 18px;
     }
 
+    #sixth-page .contact-buttons {
+        margin-top: 40px;
+    }
+
+    .contact-buttons a {
+        margin: 20px 0;
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        margin-top: 40px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 20px 0;
+        padding: 20px 40px;
+        font-size: 18px;
+    }
 }
 
 /* For screens with a minimum width of 1200px (standard laptops/desktops) */
@@ -397,6 +467,27 @@ footer.show-footer {
 
     #second-page .text-box p {
         font-size: 24px;
+    }
+
+    #sixth-page .contact-buttons {
+        margin-top: 50px;
+    }
+
+    .contact-buttons a {
+        margin: 25px 0;
+        padding: 25px 50px;
+        font-size: 20px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        margin-top: 50px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 25px 0;
+        padding: 25px 50px;
+        font-size: 20px;
     }
 }
 
