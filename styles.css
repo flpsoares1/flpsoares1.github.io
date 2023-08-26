@@ -284,6 +284,7 @@ footer.show-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
 }
 
 .title-box {
@@ -337,7 +338,27 @@ footer.show-footer {
 
 #fourth-page {
     background-color: #080E26;
+    padding: 40px;
     color: #fff;
+    display: flex;
+    flex-direction: column; /* Adjusted to be a column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Optional: Set the height as needed */
+}
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.box-containers {
+    display: flex;
+    flex-direction: column; /* Align containers in a column layout */
+    align-items: center; /* Center horizontally */
+    margin-top: 20px; /* Adjust the margin as needed */
 }
 
 .numbered-box .number {
