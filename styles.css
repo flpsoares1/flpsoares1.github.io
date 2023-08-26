@@ -234,6 +234,10 @@ footer.show-footer {
         margin-right: 10px;
     }
 
+    header {
+        padding: 10px;
+    }
+
     .text-box h1 {
         font-size: 26px;
     }
@@ -242,7 +246,31 @@ footer.show-footer {
         font-size: 16px;
     }
 
-    /* Add more responsive styles here */
+    #first-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first-half,
+    .second-half {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .first-half img,
+    .second-half img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 26px;
+    }
+
+    #second-page .text-box p {
+        font-size: 14px;
+    }
 }
 
 /* For screens with a minimum width of 768px and a maximum width of 991px (tablets) */
@@ -250,6 +278,10 @@ footer.show-footer {
     header img {
         max-width: 100px;
         margin-right: 15px;
+    }
+
+    header {
+        padding: 15px;
     }
 
     .text-box h1 {
@@ -260,7 +292,27 @@ footer.show-footer {
         font-size: 18px;
     }
 
-    /* Add more responsive styles here */
+    #first-page .first-half,
+    #first-page .second-half {
+        padding: 30px;
+    }
+
+    #first-page .text-box h1 {
+        font-size: 32px;
+    }
+
+    #first-page .text-box p {
+        font-size: 16px;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 30px;
+    }
+
+    #second-page .text-box p {
+        font-size: 18px;
+    }
 }
 
 /* For screens with a minimum width of 992px and a maximum width of 1199px (small laptops) */
@@ -270,6 +322,10 @@ footer.show-footer {
         margin-right: 20px;
     }
 
+    header {
+        padding: 20px;
+    }
+
     .text-box h1 {
         font-size: 36px;
     }
@@ -278,7 +334,28 @@ footer.show-footer {
         font-size: 18px;
     }
 
-    /* Add more responsive styles here */
+    #first-page .first-half,
+    #first-page .second-half {
+        padding: 40px;
+    }
+
+    #first-page .text-box h1 {
+        font-size: 36px;
+    }
+
+    #first-page .text-box p {
+        font-size: 18px;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 36px;
+    }
+
+    #second-page .text-box p {
+        font-size: 18px;
+    }
+
 }
 
 /* For screens with a minimum width of 1200px (standard laptops/desktops) */
@@ -288,6 +365,10 @@ footer.show-footer {
         margin-right: 20px;
     }
 
+    header {
+        padding: 20px;
+    }
+
     .text-box h1 {
         font-size: 36px;
     }
@@ -296,7 +377,27 @@ footer.show-footer {
         font-size: 18px;
     }
 
-    /* Add more responsive styles here */
+    #first-page .first-half,
+    #first-page .second-half {
+        padding: 60px;
+    }
+
+    #first-page .text-box h1 {
+        font-size: 48px;
+    }
+
+    #first-page .text-box p {
+        font-size: 20px;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 48px;
+    }
+
+    #second-page .text-box p {
+        font-size: 24px;
+    }
 }
 
 #third-page {
@@ -468,7 +569,7 @@ footer.show-footer {
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     height: 100vh; /* Optional: Set the height as needed */
-    margin-top: -20px; /* Adjust the negative margin to reduce the space */
+    margin-top: -40px; /* Adjust the negative margin to reduce the space */
 }
 
 .fifth-page-title {
@@ -509,6 +610,7 @@ footer.show-footer {
     justify-content: center; /* Center vertically */
     height: 100vh; /* Optional: Set the height as needed */
     text-align: center; /* Center text horizontally */
+    margin-top: -40px;
 }
 
 .sixth-page-title {
