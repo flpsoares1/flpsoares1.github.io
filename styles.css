@@ -336,6 +336,30 @@ footer.show-footer {
     color: #fff;
 }
 
+.whatsapp-button,
+.google-forms-button,
+.email-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.google-forms-button {
+    background-color: #2196F3;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.email-button {
+    background-color: #FFC107;
+}
+
 #fourth-page {
     background-color: #080E26;
     padding: 40px;
@@ -414,7 +438,6 @@ footer.show-footer {
     text-align: center;
 }
 
-
 #fifth-page {
     background-color: #080E26;
     padding: 40px;
@@ -424,6 +447,7 @@ footer.show-footer {
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     height: 100vh; /* Optional: Set the height as needed */
+    margin-top: -20px; /* Adjust the negative margin to reduce the space */
 }
 
 .fifth-page-title {
@@ -452,4 +476,56 @@ footer.show-footer {
 .fifth-page-table td {
     border: 1px solid #fff;
     padding: 10px;
+}
+
+#sixth-page {
+    background-color: #080E26;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Adjusted to be a column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Optional: Set the height as needed */
+    text-align: center; /* Center text horizontally */
+}
+
+.sixth-page-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sixth-page-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.whatsapp-button,
+.google-forms-button,
+.email-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.google-forms-button {
+    background-color: #2196F3;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.email-button {
+    background-color: #FFC107;
 }
