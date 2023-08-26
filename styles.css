@@ -284,7 +284,6 @@ footer.show-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
 }
 
 .title-box {
@@ -338,7 +337,6 @@ footer.show-footer {
 
 #fourth-page {
     background-color: #080E26;
-    padding: 40px;
     color: #fff;
 }
 
