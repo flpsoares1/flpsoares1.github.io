@@ -413,3 +413,43 @@ footer.show-footer {
     color: #fff;
     text-align: center;
 }
+
+
+#fifth-page {
+    background-color: #080E26;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Adjusted to be a column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Optional: Set the height as needed */
+}
+
+.fifth-page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.fifth-page-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.fifth-page-table {
+    border-collapse: collapse;
+    width: 60%;
+    max-width: 800px; /* Limit maximum width */
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.fifth-page-table th,
+.fifth-page-table td {
+    border: 1px solid #fff;
+    padding: 10px;
+}
