@@ -91,6 +91,11 @@
             <div class="price">Valor: R$3000</div>
         </div>
     </div>
+    <div class="button-container">
+        <a href=" https://wa.me/557198835537" class="whatsapp-button" data-aos="fade-up">WhatsApp</a>
+        <a href="https://forms.gle/YOUR_GOOGLE_FORMS_LINK" class="google-forms-button" data-aos="fade-up">Formulário</a>
+        <a href="mailto:felipe@easycopies.com.br" class="email-button" data-aos="fade-up">Email</a>
+    </div>
 </section>
 
 <!-- Fourth Page -->
@@ -128,7 +133,6 @@
         </div>
     </div>
 </section>
-
 <section id="fifth-page">
     <div class="fifth-page-title" data-aos="fade-up">Resultados anteriores</div>
     <div class="fifth-page-text" data-aos="fade-up">Meu cliente mais recente teve os seguintes resultados:</div>
@@ -147,41 +151,40 @@
         </tr>
     </table>
 </section>
+<section id="sixth-page">
+    <div class="sixth-page-title" data-aos="fade-up">Entre em contato para lucrar mais!</div>
+    <div class="sixth-page-text" data-aos="fade-up">Me envie uma mensagem para conversarmos sobre como posso ajudá-lo a aumentar suas
+        vendas e conquistar novos clientes.</div>
+    <div class="button-container">
+        <a href=" https://wa.me/557198835537" class="whatsapp-button" data-aos="fade-up">WhatsApp</a>
+        <a href="https://forms.gle/YOUR_GOOGLE_FORMS_LINK" class="google-forms-button" data-aos="fade-up">Formulário</a>
+        <a href="mailto:felipe@easycopies.com.br" class="email-button" data-aos="fade-up">Email</a>
+    </div>
+</section>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    /* JavaScript */
+    document.addEventListener("DOMContentLoaded", function () {
+        var lastScrollTop = 0;
+        var header = document.querySelector("header");
 
-    <footer>
-        <div class="contact-info">
-            <p><a href="mailto:felipe@easycopies.com.br" data-aos="fade-up">Email</a></p>
-        </div>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/seu_perfil" target="_blank" data-aos="fade-up"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/easycopies/" target="_blank" data-aos="fade-up"><img src="images/instagram.png" alt="Instagram"></a>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        /* JavaScript */
-        document.addEventListener("DOMContentLoaded", function () {
-            var lastScrollTop = 0;
-            var header = document.querySelector("header");
-
-            window.addEventListener("scroll", function () {
-                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop) {
-                    header.classList.add("hide-header");
-                } else {
-                    header.classList.remove("hide-header");
-                }
-                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
-            });
-
-            AOS.init();
-
-            var firstPage = document.getElementById("first-page");
-            firstPage.classList.add("fade-in-animation");
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                header.classList.add("hide-header");
+            } else {
+                header.classList.remove("hide-header");
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
         });
-    </script>
+
+        AOS.init();
+
+        var firstPage = document.getElementById("first-page");
+        firstPage.classList.add("fade-in-animation");
+    });
+</script>
 </body>
 
 </html>
