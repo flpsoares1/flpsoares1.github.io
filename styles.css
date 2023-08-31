@@ -203,15 +203,6 @@ footer.show-footer {
 }
 
 @media screen and (max-width: 767px) {
-    header img {
-        max-width: 80px;
-        margin-right: 10px;
-    }
-
-    header {
-        padding: 10px;
-    }
-
     .text-box h1 {
         font-size: 26px;
     }
@@ -274,15 +265,6 @@ footer.show-footer {
 
 /* For screens with a minimum width of 768px and a maximum width of 991px (tablets) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    header img {
-        max-width: 100px;
-        margin-right: 15px;
-    }
-
-    header {
-        padding: 15px;
-    }
-
     .text-box h1 {
         font-size: 32px;
     }
@@ -341,14 +323,6 @@ footer.show-footer {
 
 /* For screens with a minimum width of 992px and a maximum width of 1199px (small laptops) */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    header img {
-        max-width: 100px;
-        margin-right: 20px;
-    }
-
-    header {
-        padding: 20px;
-    }
 
     .text-box h1 {
         font-size: 36px;
@@ -404,15 +378,6 @@ footer.show-footer {
 
 /* For screens with a minimum width of 1200px (standard laptops/desktops) */
 @media screen and (min-width: 1200px) {
-    header img {
-        max-width: 100px;
-        margin-right: 20px;
-    }
-
-    header {
-        padding: 20px;
-    }
-
     .text-box h1 {
         font-size: 36px;
     }
@@ -524,8 +489,7 @@ footer.show-footer {
 }
 
 .whatsapp-button,
-.google-forms-button,
-.email-button {
+.google-forms-button{
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -541,10 +505,6 @@ footer.show-footer {
 
 .whatsapp-button {
     background-color: #25D366;
-}
-
-.email-button {
-    background-color: #FFC107;
 }
 
 #fourth-page {
@@ -695,8 +655,7 @@ footer.show-footer {
 }
 
 .whatsapp-button,
-.google-forms-button,
-.email-button {
+.google-forms-button{
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -712,8 +671,4 @@ footer.show-footer {
 
 .whatsapp-button {
     background-color: #25D366;
-}
-
-.email-button {
-    background-color: #FFC107;
 }
