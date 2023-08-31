@@ -1,0 +1,674 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #080E26;
+}
+
+#first-page {
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-animation {
+    animation: fade-in 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.first-half {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #080E26;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 36px;
+}
+
+.text-box p {
+    font-size: 18px;
+}
+
+.second-half {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.second-half img {
+    max-width: 100%;
+    height: auto;
+}
+
+#second-page {
+    height: 100vh;
+    background-color: #080E26;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#second-page .text-box {
+    word-break: break-word;
+    text-align: center;
+    max-width: 70%; /* Adjust the max-width to control the width of the text box */
+    margin: 0 auto; /* Center the text box horizontally */
+}
+
+#second-page .text-box h1 {
+    font-size: 48px; /* Adjust the font size for the heading */
+    margin-bottom: 10px;
+}
+
+#second-page .text-box p {
+    font-size: 24px; /* Adjust the font size for the paragraph */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.instagram-button {
+    background-color: #E1306C;
+}
+
+.pdf-button {
+    background-color: #2196F3;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+footer {
+    display: none;
+    background-color: #080E26;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer.show-footer {
+    display: block;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+
+.centered-section {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-and-video {
+    display: flex;
+    align-items: stretch;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.embedded-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.embedded-video iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .text-box h1 {
+        font-size: 26px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    #first-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first-half,
+    .second-half {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .first-half img,
+    .second-half img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 26px;
+    }
+
+    #second-page .text-box p {
+        font-size: 14px;
+    }
+
+    #sixth-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .contact-buttons a {
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For screens with a minimum width of 768px and a maximum width of 991px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .text-box h1 {
+        font-size: 32px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    #first-page .first-half,
+    #first-page .second-half {
+        padding: 30px;
+    }
+
+    #first-page .text-box h1 {
+        font-size: 32px;
+    }
+
+    #first-page .text-box p {
+        font-size: 16px;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 30px;
+    }
+
+    #second-page .text-box p {
+        font-size: 18px;
+    }
+
+    #sixth-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .contact-buttons a {
+        margin: 15px 0;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 15px 0;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+/* For screens with a minimum width of 992px and a maximum width of 1199px (small laptops) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .text-box h1 {
+        font-size: 36px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    #first-page .first-half,
+    #first-page .second-half {
+        padding: 40px;
+    }
+
+    #first-page .text-box h1 {
+        font-size: 36px;
+    }
+
+    #first-page .text-box p {
+        font-size: 18px;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 36px;
+    }
+
+    #second-page .text-box p {
+        font-size: 18px;
+    }
+
+    #sixth-page .contact-buttons {
+        margin-top: 40px;
+    }
+
+    .contact-buttons a {
+        margin: 20px 0;
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        margin-top: 40px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 20px 0;
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+}
+
+/* For screens with a minimum width of 1200px (standard laptops/desktops) */
+@media screen and (min-width: 1200px) {
+    .text-box h1 {
+        font-size: 36px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    #first-page .first-half,
+    #first-page .second-half {
+        padding: 60px;
+    }
+
+    #first-page .text-box h1 {
+        font-size: 48px;
+    }
+
+    #first-page .text-box p {
+        font-size: 20px;
+    }
+
+    /* Adjust second page styles */
+    #second-page .text-box h1 {
+        font-size: 48px;
+    }
+
+    #second-page .text-box p {
+        font-size: 24px;
+    }
+
+    #sixth-page .contact-buttons {
+        margin-top: 50px;
+    }
+
+    .contact-buttons a {
+        margin: 25px 0;
+        padding: 25px 50px;
+        font-size: 20px;
+    }
+
+    /* Adjust third page buttons */
+    #third-page .contact-buttons {
+        margin-top: 50px;
+    }
+
+    #third-page .contact-buttons a {
+        margin: 25px 0;
+        padding: 25px 50px;
+        font-size: 20px;
+    }
+}
+
+#third-page {
+    background-color: #080E26;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-box h1 {
+    font-size: 30px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-box {
+    background-color: #252833;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+.title-box-between {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.title-box-between h2 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.whatsapp-button,
+.google-forms-button{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.google-forms-button {
+    background-color: #2196F3;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+#fourth-page {
+    background-color: #080E26;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Adjusted to be a column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Optional: Set the height as needed */
+}
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.box-containers {
+    display: flex;
+    flex-direction: column; /* Align containers in a column layout */
+    align-items: center; /* Center horizontally */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.upper-box-container,
+.lower-box-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Occupy full width */
+    max-width: 800px; /* Limit maximum width */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.numbered-box {
+    background-color: #252833;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    width: calc(50% - 10px); /* Adjust the width to distribute evenly with a small gap */
+    margin: 0 5px; /* Create small gap between boxes */
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly within the box */
+}
+
+.numbered-box h3 {
+    font-size: 18px; /* Adjust font size for the heading */
+    margin-bottom: 5px;
+}
+
+.numbered-box p {
+    font-size: 14px; /* Adjust font size for the paragraph */
+    margin-bottom: 10px;
+}
+
+
+.numbered-box .number {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.numbered-box span.number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#fifth-page {
+    background-color: #080E26;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Adjusted to be a column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Optional: Set the height as needed */
+    margin-top: -40px; /* Adjust the negative margin to reduce the space */
+}
+
+.fifth-page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.fifth-page-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.fifth-page-table {
+    border-collapse: collapse;
+    width: 60%;
+    max-width: 800px; /* Limit maximum width */
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.fifth-page-table th,
+.fifth-page-table td {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+#sixth-page {
+    background-color: #080E26;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Adjusted to be a column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Optional: Set the height as needed */
+    text-align: center; /* Center text horizontally */
+    margin-top: -40px;
+}
+
+.sixth-page-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sixth-page-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.whatsapp-button,
+.google-forms-button{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.google-forms-button {
+    background-color: #2196F3;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
